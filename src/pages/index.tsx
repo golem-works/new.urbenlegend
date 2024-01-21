@@ -12,6 +12,7 @@ export default function Home() {
     <Head>
       <title>Urben Legend Card</title>
       <link rel="icon" href="/icon.png" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     </Head>
     
 
