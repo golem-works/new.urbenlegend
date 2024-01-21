@@ -1,0 +1,113 @@
+.navList {
+  color: antiquewhite;
+  background-color: dimgray;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.navList ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.navList ul li {
+  margin-bottom: 10px; 
+  transition: color 0.3s ease;
+  margin-top: 10px;
+}
+
+/* ホバー時のスタイル */
+.navList ul li:hover {
+  color: blueviolet;
+  margin-bottom: 0;
+}
+
+.navList ul li a {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 0 transparent;
+  position: relative; 
+}
+
+.navList ul li a:hover {
+  color: blueviolet;
+  text-shadow: 0 0 10px blueviolet;
+}
+
+/* アンダーラインのスタイル */
+.navList ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: blueviolet;
+  transition: width 0.3s;
+  bottom: -5px;
+  left: 0;
+}
+
+.navList ul li a:hover::after {
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .navList ul {
+    max-width: 100px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    background-color: aliceblue; 
+    text-align: center; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+
+  .navList ul li {
+    color: rgb(1, 3, 5);
+    background-color: transparent; 
+    opacity: 0.8; 
+    padding: 15px 0; 
+    border-bottom: 1px solid #ddd; 
+  }
+
+  .navListMobile {
+    display: block;
+  }
+
+
+  /* 追記 */
+  .navListHidden { 
+    display: none!important;
+  }
+
+
+  .navList ul li a {
+    color: rgb(1, 3, 5); 
+    text-decoration: none; 
+    font-weight: bold;
+  }
+
+
+  .navList ul li a:hover {
+    color: #0056b3; 
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navList {
+    z-index: 40;
+  }
+
+  .navList:hover {
+    background-color: #ddd;
+    color: brown;
+  
+  }
+}

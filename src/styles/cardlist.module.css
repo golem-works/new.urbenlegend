@@ -1,0 +1,29 @@
+
+.crdelist {
+    color: aliceblue;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.crdelist ul {
+    list-style-type: none; /* リストのスタイルをなしに設定 */
+    padding: 0; /* リストのパディングをゼロに設定 */
+    display: flex; /* フレックスコンテナを設定 */
+    flex-direction: column; /* 子要素を縦方向に並べる */
+    align-items: center; /* 子要素を中央揃えにする */
+   
+}
+
+.crdelist ul li {
+    display: flex; /* li要素もフレックスアイテムにする */
+    justify-content: flex-start; /* テキストの開始位置を揃える */
+    width: 100%; /* li要素の幅を100%に設定 */
+    max-width: 300px; /* 最大幅を設定して、すべてのli要素を同じ幅にする */
+    font-size: 20px;
+    padding: 2px;
+}
+
+.crdelist .myImg img {
+    width: 90px;
+}

@@ -1,0 +1,87 @@
+.titleFooter {
+  background-color: rgb(190, 36, 36);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.titleFooter img {
+  margin: 20px;
+}
+
+.titleFooterList {
+  list-style-type: none;
+  padding: 20px;
+  border: 0.5px solid #000;
+  font-family: fantasy;
+}
+
+.titleFooterList li {
+  margin-bottom: 10px;
+  color: rgb(217, 238, 238);
+}
+
+.titleFooterList a {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 0 transparent;
+
+  position: relative;
+transition: color 0.3s ease;
+}
+
+.titleFooterList a:hover {
+  color: blueviolet;
+  text-shadow: 0 0 10px blueviolet;
+}
+
+.titleFooterList a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: blueviolet;
+  transition: width 0.3s;
+  bottom: -5px;
+  left: 0;
+}
+
+.titleFooterList a:hover::after {
+  width: 100%;
+}
+.titleFooter p {
+  color: aliceblue;
+}
+
+@media (max-width: 768px) {
+.titleFooter {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-gap: 10px; 
+  padding: 10px; 
+  font-size: 14px; 
+}
+
+.titleFooter img {
+  width: 80%; 
+  margin: auto; 
+}
+
+.titleFooterList {
+  padding: 10px; 
+  border: none; 
+}
+
+.titleFooterList li {
+  font-size: 10px; 
+}
+}
+
+@media (min-width:769px) {
+
+.titleFooter {
+  width: 90%;
+}
+
+}

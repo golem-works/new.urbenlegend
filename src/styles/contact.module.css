@@ -1,0 +1,49 @@
+/* contact.module.css */
+.container {
+    max-width: 600px;
+    margin:  auto;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+
+.formTitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputField,
+.textAreaField {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}
+
+.textFooter {
+    margin-top: 50px;
+    color: #f6ecec;
+    position:  fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
