@@ -6,24 +6,49 @@
     width: 100%;
 }
 
-.crdelist ul {
-    list-style-type: none; /* リストのスタイルをなしに設定 */
-    padding: 0; /* リストのパディングをゼロに設定 */
-    display: flex; /* フレックスコンテナを設定 */
-    flex-direction: column; /* 子要素を縦方向に並べる */
-    align-items: center; /* 子要素を中央揃えにする */
-   
+.name {
+    color:white;
 }
 
-.crdelist ul li {
-    display: flex; /* li要素もフレックスアイテムにする */
-    justify-content: flex-start; /* テキストの開始位置を揃える */
-    width: 100%; /* li要素の幅を100%に設定 */
-    max-width: 300px; /* 最大幅を設定して、すべてのli要素を同じ幅にする */
+.cardList {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: space-between;
+}
+  
+  .cardList img {
+    width: 300px;
+    margin: 20px;
+  }
+
+  .fot {
+    color: white;
+  }
+
+  .home {
+    color: white;
+    margin: 50px;
     font-size: 20px;
-    padding: 2px;
-}
+  }
 
-.crdelist .myImg img {
-    width: 90px;
-}
+  .home:hover {
+    color: rgb(121, 121, 237);
+    font-size: 22px;
+  }
+
+  
+  @media (max-width: 768px) {
+
+    .cardList {
+       display: flex;
+       justify-content: center;
+    }
+
+    .cardList img {
+        width: 300px;
+        margin: 20px;
+        text-align: center;
+      }
+    
+  }
