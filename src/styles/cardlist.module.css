@@ -1,26 +1,60 @@
 
-.crdelist {
-    color: aliceblue;
-    margin-top: 50px;
-    text-align: center;
-    width: 100%;
-}
 
-.name {
-    color:white;
-}
+
 
 .cardList {
     display: flex; 
     flex-wrap: wrap; 
     gap: 10px; 
     justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+    margin: auto;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 00;
 }
+
+
+
+
+.cardList p {
+  width: 300px;
+  margin: auto;
+  background-color: darkslategray; 
+  padding: 20px;
+  color: ghostwhite;
+  font-size: 15px;
+  border: solid 3px darkred; 
+  height: 300px;
+  font-family: 'Courier New', Courier, monospace; 
+  box-shadow: 0 0 10px red;
+}
+
+.cardList h2 {
+  color: ghostwhite; 
+  padding: 10px;
+  background-color: darkred;
+  width: 300px;
+  margin: auto;
+  border: solid 3px black; 
+  border-bottom: none;
+  text-shadow: 3px 3px 3px black;
+}
+
   
-  .cardList img {
-    width: 300px;
-    margin: 20px;
-  }
+.cardList img {
+  width: 300px;
+  margin: 50px;
+  margin-bottom: 0px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* トランジション効果を追加 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
+
+.cardList img:hover {
+  transform: scale(1.2); /* 拡大率を調整 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* ホバー時の影をより大きく */
+}
+
 
   .fot {
     color: white;
