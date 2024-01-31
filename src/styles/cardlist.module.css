@@ -60,15 +60,32 @@
     color: white;
   }
 
+  .button {
+    color: white;
+    margin: 50px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace; 
+    
+}
+
+ .button:hover {
+  color: rgb(121, 121, 237);
+  font-size: 20px;
+  box-shadow: 0 0 10px red;
+}
+
   .home {
     color: white;
     margin: 50px;
     font-size: 20px;
+    font-family: 'Courier New', Courier, monospace; 
+    
   }
 
   .home:hover {
     color: rgb(121, 121, 237);
     font-size: 22px;
+    box-shadow: 0 0 10px red;
   }
 
   
