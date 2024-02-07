@@ -14,6 +14,7 @@ export default function Home() {
       <link rel="icon" href="/icon.png" />
       <link rel="apple-touch-icon" href="/apple-touch-icon192.png" />
       <link rel="manifest" href="/manifest.json" />
+      <meta name="google-site-verification" content="zwf9f3mcoUsGAQcjgz4QoBTHjiDJxfmS_THUHFhL9Ec" />
     </Head>
     
 
