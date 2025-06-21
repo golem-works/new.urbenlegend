@@ -28,18 +28,18 @@ export default async function contactHandler(req, res) {
     const { email, name, message } = req.body;
 console.log(1)
     const transporter = nodeMailer.createTransport({
-      host: "sv14426.xserver.jp",
+      host: "",
       port: 465,
       secure: true, // true for 465, false for other ports
       auth: {
-        user: "kouichi@golem-works.com", // 環境変数からメールアドレスを取得
-        pass: "kk620722", // 環境変数からメールアカウントのパスワードを取得
+        user: "", // 環境変数からメールアドレスを取得
+        pass: "", // 環境変数からメールアカウントのパスワードを取得
       },
     });
     console.log(2)
     const mailOptions = {
       from: process.env.EMAIL_USER, // 送信者アドレス
-      to: "protein.dolles@gmail.com", // あなたがメールを送信したいアドレス
+      to: "", // あなたがメールを送信したいアドレス
       subject: "Urben Legend Contact Form",
       text: `名前: ${name}\nメールアドレス: ${email}\nメッセージ: ${message}`,
     };
