@@ -5,7 +5,7 @@ import nodeMailer from "nodemailer";
 // CORSミドルウェアを初期化します
 const cors = Cors({
   // リクエストを受け入れるオリジンを設定します
-  origin: '*',
+ 
   methods: ['POST'],
 });
 
